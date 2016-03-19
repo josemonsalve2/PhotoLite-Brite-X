@@ -1,0 +1,17 @@
+ISim log file
+Running: /home/bee/ledDriver_LedStrip/Led_controller_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/bee/ledDriver_LedStrip/Led_controller_tb_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 4977085 ns : File "/home/bee/ledDriver_LedStrip/Led_controller_tb.vhd" Line 82
+# exit 0
