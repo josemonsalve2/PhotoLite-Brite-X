@@ -1,0 +1,10 @@
+Command line:
+   Led_controller_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  33973
+
+Sun Apr 10 21:21:12 2016
+
+
+ Elaboration Time: 0.05 sec
