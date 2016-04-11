@@ -100,10 +100,10 @@ entity user_logic is
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
-			Pixel: in STD_LOGIC_VECTOR (23 downto 0);
-			  tx   : in STD_LOGIC;
-				clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
+			--Pixel: in STD_LOGIC_VECTOR (23 downto 0);
+			  --tx   : in STD_LOGIC;
+			  clk_sys : in  STD_LOGIC;
+           --reset : in  STD_LOGIC;
            DataOut : out  STD_LOGIC := '1';
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
@@ -137,11 +137,19 @@ end entity user_logic;
 architecture IMP of user_logic is
 
   --USER signal declarations added here, as needed for user logic
+  constant clk_period : time := 125 ns;
 signal index : STD_LOGIC_VECTOR(5 downto 0) := (others => '0');
 signal Counter : STD_LOGIC_VECTOR(3 downto 0) := (others => '0');
 signal transmitting_clk : STD_LOGIC := '0';
 signal transmitting_tx : STD_LOGIC := '0';
 signal transmitting : STD_LOGIC := '0';
+signal Pixel: STD_LOGIC_VECTOR (23 downto 0);
+signal tx   : STD_LOGIC;
+signal clk : STD_LOGIC;
+signal reset :  STD_LOGIC;
+
+signal clk_devider: STD_LOGIC_VECTOR(3 downto 0) := (others => '0');
+
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
@@ -186,6 +194,9 @@ signal transmitting : STD_LOGIC := '0';
 begin
 
   --USER logic implementation added here
+pixel<=slv_reg0(23 downto 0);
+tx   <=slv_reg0(24);
+reset <=slv_reg0(25);
 
 clk_proc: process (clk)
 begin
@@ -199,7 +210,7 @@ begin
 			DataOut<='1';
 			counter <= "0000";
 			index <= index + '1';
-		elsif (counter="0011" and Pixel(to_integer(unsigned(x"00000"&"00"&index)))='0') then
+		elsif (counter="0100" and Pixel(to_integer(unsigned(x"00000"&"00"&index)))='0') then
 			DataOut <= '0';
 			counter <= counter + '1';
 		elsif (counter="0111") then 
@@ -220,9 +231,17 @@ begin
 if (rising_edge(tx)) then
 
 		transmitting_tx <='1';
-		transmitting_tx <='0' after 20ns;
+		transmitting_tx <='0' after 2*clk_period; --keep high for two cycles
 
 	 end if;
+end process;
+
+clk_gen: process ( 
+begin 
+		clk <= '0';
+		wait for clk_period/2;
+		clk <= '1';
+		wait for clk_period/2;
 end process;
 
 transmitting<=transmitting_tx or transmitting_clk;

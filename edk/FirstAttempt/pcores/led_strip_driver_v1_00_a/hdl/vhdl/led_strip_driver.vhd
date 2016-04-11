@@ -138,10 +138,10 @@ entity led_strip_driver is
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
-	        Pixel: in STD_LOGIC_VECTOR (23 downto 0);
-			  tx   : in STD_LOGIC;
-				clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
+	        --Pixel: in STD_LOGIC_VECTOR (23 downto 0);
+			  --tx   : in STD_LOGIC;
+			--	clk : in  STD_LOGIC;
+           --reset : in  STD_LOGIC;
            DataOut : out  STD_LOGIC;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
@@ -307,10 +307,10 @@ begin
     (
       -- MAP USER PORTS BELOW THIS LINE ------------------
       --USER ports mapped here
-		Pixel => Pixel,
-			  tx   => tx,
-				clk => clk,
-           reset => reset,
+		--Pixel => Pixel,
+			--  tx   => tx,
+				--clk => clk,
+         --  reset => reset,
            DataOut => DataOut,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
