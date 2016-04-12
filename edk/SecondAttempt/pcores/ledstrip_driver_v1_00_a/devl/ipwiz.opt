@@ -1,0 +1,8 @@
+-batch 
+-create ledstrip_driver 
+-ver 1.00.a 
+-dir "/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 32 
+-xps 
