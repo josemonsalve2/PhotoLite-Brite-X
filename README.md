@@ -29,4 +29,4 @@ the DATA_OUT pin. This is, the purpose of the DATA_OUT is to retransmitt the bit
 the following pixel's DATA_IN (j+1) once the current pixel (j) is already assign. 
 
 
-![alt tag](https://raw.githubusercontent.com/josemonsalve2/PhotoLite-Brite-X/master/LED_STRIP.png)
+![alt tag](https://cloud.githubusercontent.com/assets/1594240/14506449/de5e4a86-018b-11e6-8260-2fc3ba46a2f0.png)
