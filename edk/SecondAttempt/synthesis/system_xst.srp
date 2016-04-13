@@ -5,7 +5,7 @@ Parameter TMPDIR set to /home/bee/FinalProject/github/PhotoLite-Brite-X/edk/Seco
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.02 secs
  
 --> 
 
@@ -997,17 +997,17 @@ INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_2> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_1> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24_2> 
-INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_21> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_21_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_21_2> 
+INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_29> in Unit <ledstrip_driver_0> is equivalent to the following FF/Latch : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_29_2> 
-INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <ledstrip_driver_0> is equivalent to the following 9 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_4> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_5> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_6> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_7> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_8> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_9> 
+INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <ledstrip_driver_0> is equivalent to the following 8 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_4> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_5> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_6> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_7> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_8> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_13> in Unit <ledstrip_driver_0> is equivalent to the following FF/Latch : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_13_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_26> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_26_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_26_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_23> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_23_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_23_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_20> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_20_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_20_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_28> in Unit <ledstrip_driver_0> is equivalent to the following FF/Latch : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_28_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_12> in Unit <ledstrip_driver_0> is equivalent to the following FF/Latch : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_12_2> 
-INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25> in Unit <ledstrip_driver_0> is equivalent to the following 3 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_2> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_3> 
+INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_22> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_22_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_22_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_27> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_27_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_27_2> 
@@ -1022,17 +1022,17 @@ INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28> in Unit <microblaze_0> is equivalent to the following 2 FFs/Latches : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_1> <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/wb_exception_kind_i_28_2> 
 INFO:Xst:2260 - The FF/Latch <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc> in Unit <microblaze_0> is equivalent to the following FF/Latch : <microblaze_0/MicroBlaze_Core_I/Performance.Decode_I/ex_Take_Intr_or_Exc_1> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24_2> 
-INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_21> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_21_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_21_2> 
+INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_29> in Unit <ledstrip_driver_0> is equivalent to the following FF/Latch : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_29_2> 
-INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <ledstrip_driver_0> is equivalent to the following 9 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_4> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_5> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_6> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_7> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_8> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_9> 
+INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg> in Unit <ledstrip_driver_0> is equivalent to the following 8 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_3> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_4> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_5> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_6> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_7> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_8> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_13> in Unit <ledstrip_driver_0> is equivalent to the following FF/Latch : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_13_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_26> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_26_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_26_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_23> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_23_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_23_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_20> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_20_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_20_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_28> in Unit <ledstrip_driver_0> is equivalent to the following FF/Latch : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_28_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_12> in Unit <ledstrip_driver_0> is equivalent to the following FF/Latch : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_12_2> 
-INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25> in Unit <ledstrip_driver_0> is equivalent to the following 3 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_2> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_3> 
+INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_22> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_22_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_22_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14_2> 
 INFO:Xst:2260 - The FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_27> in Unit <ledstrip_driver_0> is equivalent to the following 2 FFs/Latches : <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_27_1> <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_27_2> 
@@ -1065,32 +1065,32 @@ Top Level Output File Name         : system.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 3877
+# BELS                             : 4169
 #      GND                         : 12
-#      INV                         : 41
-#      LUT1                        : 37
-#      LUT2                        : 210
-#      LUT3                        : 811
-#      LUT4                        : 440
-#      LUT5                        : 502
-#      LUT6                        : 1277
+#      INV                         : 42
+#      LUT1                        : 53
+#      LUT2                        : 227
+#      LUT3                        : 1006
+#      LUT4                        : 441
+#      LUT5                        : 507
+#      LUT6                        : 1275
 #      LUT6_2                      : 96
 #      MULT_AND                    : 2
-#      MUXCY                       : 26
+#      MUXCY                       : 57
 #      MUXCY_L                     : 155
-#      MUXF7                       : 148
+#      MUXF7                       : 143
 #      VCC                         : 7
-#      XORCY                       : 113
-# FlipFlops/Latches                : 3021
-#      FD                          : 257
+#      XORCY                       : 146
+# FlipFlops/Latches                : 3051
+#      FD                          : 255
 #      FDC                         : 31
 #      FDC_1                       : 5
 #      FDCE                        : 15
-#      FDE                         : 355
+#      FDE                         : 371
 #      FDE_1                       : 8
 #      FDP                         : 5
-#      FDR                         : 641
-#      FDRE                        : 1662
+#      FDR                         : 632
+#      FDRE                        : 1687
 #      FDRE_1                      : 1
 #      FDS                         : 4
 #      FDSE                        : 37
@@ -1120,19 +1120,19 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            3021  out of  18224    16%  
- Number of Slice LUTs:                 3592  out of   9112    39%  
-    Number used as Logic:              3414  out of   9112    37%  
+ Number of Slice Registers:            3051  out of  18224    16%  
+ Number of Slice LUTs:                 3825  out of   9112    41%  
+    Number used as Logic:              3647  out of   9112    40%  
     Number used as Memory:              178  out of   2176     8%  
        Number used as RAM:               64
        Number used as SRL:              114
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   5242
-   Number with an unused Flip Flop:    2221  out of   5242    42%  
-   Number with an unused LUT:          1650  out of   5242    31%  
-   Number of fully used LUT-FF pairs:  1371  out of   5242    26%  
-   Number of unique control sets:       120
+ Number of LUT Flip Flop pairs used:   5281
+   Number with an unused Flip Flop:    2230  out of   5281    42%  
+   Number with an unused LUT:          1456  out of   5281    27%  
+   Number of fully used LUT-FF pairs:  1595  out of   5281    30%  
+   Number of unique control sets:       117
 
 IO Utilization: 
  Number of IOs:                           4
@@ -1166,10 +1166,9 @@ Clock Information:
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)                                                                                             | Load  |
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
-GCLK                               | PLL_ADV:CLKOUT0                                                                                                   | 2903  |
+GCLK                               | PLL_ADV:CLKOUT0                                                                                                   | 2940  |
 debug_module/debug_module/drck_i   | BUFG                                                                                                              | 209   |
 debug_module/Ext_JTAG_UPDATE       | NONE(microblaze_0/microblaze_0/MicroBlaze_Core_I/Performance.Use_Debug_Logic.Master_Core.Debug_Perf/command_reg_0)| 43    |
-ledstrip_driver_0/secondCLK        | NONE(ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_5)                              | 7     |
 -----------------------------------+-------------------------------------------------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
@@ -1181,7 +1180,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 11.159ns (Maximum Frequency: 89.614MHz)
+   Minimum period: 11.132ns (Maximum Frequency: 89.834MHz)
    Minimum input arrival time before clock: 7.268ns
    Maximum output required time after clock: 9.715ns
    Maximum combinational path delay: No path found
@@ -1192,10 +1191,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GCLK'
-  Clock period: 11.159ns (frequency: 89.614MHz)
-  Total number of paths / destination ports: 395953 / 8062
+  Clock period: 11.132ns (frequency: 89.834MHz)
+  Total number of paths / destination ports: 397365 / 8162
 -------------------------------------------------------------------------
-Delay:               11.159ns (Levels of Logic = 11)
+Delay:               11.132ns (Levels of Logic = 11)
   Source:            ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (FF)
   Destination:       axi4lite_0/axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0 (FF)
   Source Clock:      GCLK rising
@@ -1205,9 +1204,9 @@ Delay:               11.159ns (Levels of Logic = 11)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              14   0.447   0.958  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1)
-     LUT2:I1->O          105   0.205   1.891  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i<1>1 (ledstrip_driver_0/ipif_Bus2IP_RdCE<30>)
-     LUT6:I5->O            1   0.205   0.000  ledstrip_driver_0/USER_LOGIC_I/slv_read_ack<0>2_F (N972)
+     FD:C->Q              13   0.447   0.933  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1)
+     LUT2:I1->O          104   0.205   1.888  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i<1>1 (ledstrip_driver_0/ipif_Bus2IP_RdCE<30>)
+     LUT6:I5->O            1   0.205   0.000  ledstrip_driver_0/USER_LOGIC_I/slv_read_ack<0>2_F (N974)
      MUXF7:I0->O           2   0.131   0.617  ledstrip_driver_0/USER_LOGIC_I/slv_read_ack<0>2 (ledstrip_driver_0/USER_LOGIC_I/slv_read_ack<0>1)
      LUT6:I5->O           35   0.205   1.439  ledstrip_driver_0/USER_LOGIC_I/slv_read_ack<0>7 (ledstrip_driver_0/user_IP2Bus_RdAck)
      LUT2:I0->O            2   0.203   0.721  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rd_done1 (S_AXI_ARREADY)
@@ -1220,8 +1219,8 @@ Delay:               11.159ns (Levels of Logic = 11)
      LUT6:I4->O            1   0.203   0.000  axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0_glue_set (axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0_glue_set)
      FDR:D                     0.102          axi4lite_0/crossbar_samd/gen_sasd.crossbar_sasd_0/gen_crossbar.addr_arbiter_inst/m_grant_hot_i_0
     ----------------------------------------
-    Total                     11.159ns (2.515ns logic, 8.644ns route)
-                                       (22.5% logic, 77.5% route)
+    Total                     11.132ns (2.515ns logic, 8.617ns route)
+                                       (22.6% logic, 77.4% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'debug_module/debug_module/drck_i'
@@ -1281,28 +1280,6 @@ Delay:               4.943ns (Levels of Logic = 4)
     ----------------------------------------
     Total                      4.943ns (1.380ns logic, 3.563ns route)
                                        (27.9% logic, 72.1% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'ledstrip_driver_0/secondCLK'
-  Clock period: 2.990ns (frequency: 334.415MHz)
-  Total number of paths / destination ports: 64 / 13
--------------------------------------------------------------------------
-Delay:               2.990ns (Levels of Logic = 1)
-  Source:            ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_0 (FF)
-  Destination:       ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_5 (FF)
-  Source Clock:      ledstrip_driver_0/secondCLK rising
-  Destination Clock: ledstrip_driver_0/secondCLK rising
-
-  Data Path: ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_0 to ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_5
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              8   0.447   1.167  ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_0 (ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter<0>)
-     LUT6:I0->O            6   0.203   0.744  ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/GND_50_o_counter[5]_equal_9_o<5>1 (ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/GND_50_o_counter[5]_equal_9_o)
-     FDR:R                     0.430          ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_0
-    ----------------------------------------
-    Total                      2.990ns (1.080ns logic, 1.910ns route)
-                                       (36.1% logic, 63.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'GCLK'
@@ -1382,28 +1359,8 @@ Offset:              7.268ns (Levels of Logic = 6)
                                        (22.7% logic, 77.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ledstrip_driver_0/secondCLK'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              3.634ns (Levels of Logic = 2)
-  Source:            ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/dataOut (FF)
-  Destination:       ledstrip_driver_0_dataOut_pin (PAD)
-  Source Clock:      ledstrip_driver_0/secondCLK rising
-
-  Data Path: ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/dataOut to ledstrip_driver_0_dataOut_pin
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               2   0.447   0.616  ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/dataOut (dataOut)
-     end scope: 'ledstrip_driver_0:dataOut'
-     OBUF:I->O                 2.571          ledstrip_driver_0_dataOut_pin_OBUF (ledstrip_driver_0_dataOut_pin)
-    ----------------------------------------
-    Total                      3.634ns (3.018ns logic, 0.616ns route)
-                                       (83.0% logic, 17.0% route)
-
-=========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GCLK'
-  Total number of paths / destination ports: 17 / 3
+  Total number of paths / destination ports: 18 / 4
 -------------------------------------------------------------------------
 Offset:              4.597ns (Levels of Logic = 7)
   Source:            microblaze_0_d_bram_ctrl/microblaze_0_d_bram_ctrl/Sl_Rdy (FF)
@@ -1497,7 +1454,7 @@ Clock to Setup on destination clock GCLK
                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 --------------------------------+---------+---------+---------+---------+
-GCLK                            |   11.159|         |         |         |
+GCLK                            |   11.132|         |         |         |
 debug_module/Ext_JTAG_UPDATE    |    3.711|    2.923|         |         |
 debug_module/debug_module/drck_i|    4.360|         |         |         |
 --------------------------------+---------+---------+---------+---------+
@@ -1522,24 +1479,16 @@ debug_module/Ext_JTAG_UPDATE    |         |    4.934|    2.873|         |
 debug_module/debug_module/drck_i|    2.427|    3.477|    3.249|         |
 --------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock ledstrip_driver_0/secondCLK
----------------------------+---------+---------+---------+---------+
-                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock               |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------------------+---------+---------+---------+---------+
-ledstrip_driver_0/secondCLK|    2.990|         |         |         |
----------------------------+---------+---------+---------+---------+
-
 =========================================================================
 
 
-Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 16.16 secs
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 16.75 secs
  
 --> 
 
 
-Total memory usage is 158848 kilobytes
+Total memory usage is 159140 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    4 (   0 filtered)

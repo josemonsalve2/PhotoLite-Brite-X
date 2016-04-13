@@ -17,7 +17,7 @@
     <SET ID="ledstrip_driver_0" IS_EXPANDED="TRUE"/>
     <STATUS>
       <SELECTIONS>
-        <VARIABLE ID="microblaze_0_d_bram_ctrl"/>
+        <VARIABLE ID="ledstrip_driver_0"/>
       </SELECTIONS>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">

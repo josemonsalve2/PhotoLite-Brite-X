@@ -43,19 +43,14 @@ entity Led_Controller is
 end Led_Controller;
 
 architecture Behavioral of Led_Controller is
-
---For the clock divider count up to sysclk/20MHz We want our clock to be 8 MHz--
---	constant count_to : integer := system_clk/20000000-1; -- the -1 is because we want to count from 0
---	signal clock_divider : unsigned (7 downto 0) := x"00";
---
---	signal divided_clk : std_logic := '0';
-	
 	--reset stuff
-	constant reset_count_to : integer := system_clk*50/20000000; -- TODO FIX ERROR HERE BS FU we might want to do -1 here as well
+	constant reset_count_to : integer := 6000; -- TODO FIX ERROR HERE BS FU we might want to do -1 here as well
 	signal reset_counter : unsigned (15 downto 0) := (others => '0');
 	
 	--Multiple LEDS
 	signal led_counter : unsigned (15 downto 0) := (others => '0');
+	
+	signal s : std_logic:='0';
 	
 	--System states
 	type states_type is (
@@ -74,33 +69,51 @@ architecture Behavioral of Led_Controller is
 	begin
 	
 	if rising_edge(clk) then
-		secondClk <= divided_clk;
-		counter <= counter + '1';
-		case counter is 
-			when x"00" =>
-				DataOut <= '1';
-			-- counter = 8
-			-- bit at Pixel[index] is low
-			when x"22" =>
-				if Pixel(to_integer(unsigned(index)))='0' then
-					DataOut <= '0';
-				end if;
-			-- counter = 16
-			-- whether bit at Pixel[index] is low or high
-			when x"46" =>
+		case system_state is
+			when transmitting =>
+				counter <= counter + '1';
+				case counter is 
+					when x"00" =>
+						DataOut <= '1';
+					-- counter = 
+					-- bit at Pixel[index] is low
+					when x"22" =>
+						if Pixel(to_integer(unsigned(index)))='0' then
+							DataOut <= '0';
+						end if;
+					-- counter = 
+					-- whether bit at Pixel[index] is low or high
+					when x"46" =>
+						DataOut <= '0';
+					-- increment counter
+					-- counter = 
+					-- reset counter, increment index
+					when x"7D" =>
+						s <= not s;
+						DataOut<='1';
+						counter <= x"00";
+						if index = "010111" then
+							index <= "000000";
+							led_counter <= led_counter + 1;
+							if led_counter = numLeds - 1 then
+								system_state <= reseting;
+							end if;
+						else 
+							index <= index + '1';
+						end if;
+					when others => 
+						null;
+				end case;
+			when reseting =>
 				DataOut <= '0';
-			-- increment counter
-			-- counter = 
-			-- reset counter, increment index
-			when x"7D" =>
-				DataOut<='1';
-				counter <= "000000";
-				if index = "010111" then
-					index <= "000000";
-				else 
-					index <= index + '1';
+				if reset_counter = reset_count_to then
+					reset_counter <= (others =>'0');
+					led_counter <= (others => '0');
+					system_state <= transmitting;
+				else
+					reset_counter <= reset_counter + 1;
 				end if;
-			when others => 
+			when others =>
 				null;
 		end case;
 	end if;
@@ -186,21 +199,7 @@ architecture Behavioral of Led_Controller is
 --		end if;
 
 	end process;
-
---	clk_gen: process (clk)
---	begin
---		
---		if rising_edge(clk) then
---				if clock_divider = count_to then
---					clock_divider <= (others => '0');
---					divided_clk <= '1';
---				else
---					clock_divider <= clock_divider + 1;
---					divided_clk <= '0';
---				end if;
---		end if;
---	end process;
-
 	dataOut_port <= dataOut;
+	secondClk <= s;
 end Behavioral;
 

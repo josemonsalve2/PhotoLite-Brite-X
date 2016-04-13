@@ -1,13 +1,13 @@
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system.ngc 1460488528
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_proc_sys_reset_0_wrapper.ngc 1460488324
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_clock_generator_0_wrapper.ngc 1460488503
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_ilmb_wrapper.ngc 1460488487
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_dlmb_wrapper.ngc 1460488493
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_axi4lite_0_wrapper.ngc 1460488509
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_wrapper.ngc 1460488498
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_i_bram_ctrl_wrapper.ngc 1460488341
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_d_bram_ctrl_wrapper.ngc 1460488359
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_debug_module_wrapper.ngc 1460488432
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_ledstrip_driver_0_wrapper.ngc 1460488482
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_bram_block_wrapper.ngc 1460488369
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system.ngc 1460576500
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_proc_sys_reset_0_wrapper.ngc 1460576422
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_clock_generator_0_wrapper.ngc 1460576479
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_ilmb_wrapper.ngc 1460576422
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_dlmb_wrapper.ngc 1460576423
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_axi4lite_0_wrapper.ngc 1460576423
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_wrapper.ngc 1460576423
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_i_bram_ctrl_wrapper.ngc 1460576422
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_d_bram_ctrl_wrapper.ngc 1460576423
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_debug_module_wrapper.ngc 1460576423
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_ledstrip_driver_0_wrapper.ngc 1460576474
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/implementation/system_microblaze_0_bram_block_wrapper.ngc 1460576423
 OK

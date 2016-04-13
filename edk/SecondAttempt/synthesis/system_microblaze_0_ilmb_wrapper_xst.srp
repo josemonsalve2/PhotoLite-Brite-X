@@ -5,7 +5,7 @@ Parameter TMPDIR set to /home/bee/FinalProject/github/PhotoLite-Brite-X/edk/Seco
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 
@@ -289,7 +289,7 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.24 secs
+Total CPU time to Xst completion: 5.80 secs
  
 --> 
 

@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Apr 12 15:17:49 2016
+// Written by: Map P.20131013 on Wed Apr 13 15:44:04 2016
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -2202,27 +2202,25 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         BEL
         "debug_module/debug_module/Use_AXI_IPIF.AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1"
         BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_20_2"
-        BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_9"
-        BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_26_2"
-        BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_21_2"
-        BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24_2"
-        BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_8"
-        BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_3"
+        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_27_2"
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_28_2"
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_29_2"
         BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14_2"
+        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_2"
         BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_7"
+        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_21_2"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_26_2"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24_2"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_20_2"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_8"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14_2"
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_12_2"
         BEL
@@ -2230,19 +2228,17 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_11_2"
         BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_6"
-        BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_16_2"
-        BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25_2"
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_22_2"
         BEL
-        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_27_2"
+        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_7"
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_23_2"
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_27_1"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_6"
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_5"
         BEL
@@ -2346,6 +2342,8 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1"
         BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/dataOut"
+        BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg"
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst"
@@ -2354,13 +2352,89 @@ TIMEGRP clock_generator_0_clock_generator_0_SIG_PLL0_CLKOUT0 = PIN
         BEL
         "ledstrip_driver_0/ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bvalid_i"
         BEL
-        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/divided_clk"
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/system_state_FSM_FFd1"
         BEL
-        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/clock_divider_0"
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/index_0"
         BEL
-        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/clock_divider_1"
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/index_1"
         BEL
-        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/clock_divider_2"
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/index_2"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/index_3"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/index_4"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_0"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_1"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_2"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_3"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_4"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_5"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_6"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_7"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_8"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_9"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_10"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_11"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_12"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_13"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_14"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/led_counter_15"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_0"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_1"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_2"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_3"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_4"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_5"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_6"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_7"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_8"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_9"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_10"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_11"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_12"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_0"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_1"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_2"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_3"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_4"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_5"
+        BEL
+        "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_6"
         BEL "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/slv_reg2_0" BEL
         "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/slv_reg2_1" BEL
         "ledstrip_driver_0/ledstrip_driver_0/USER_LOGIC_I/slv_reg2_2" BEL

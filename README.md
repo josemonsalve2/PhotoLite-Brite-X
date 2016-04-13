@@ -16,7 +16,7 @@ WS2812B components out of the 144.
 This document does not contain information regarding the Maximum Ratings or electrical 
 characteristics. Please see the datasheet to get this information.
 
-The WS2812B is an **Intelligent control LED integrated light source ** and corresponds to our pixel. 
+The WS2812B is an **Intelligent control LED integrated light source** and corresponds to our pixel. 
 It has 3 different leds, Red, Blue and Green. Each led has 256 levels of brightness encoded in 8 bits.
 This adds up to a total of 24 bits per pixel. Data is sent in serial transmission, one bit at a time, starting from
 the MSB of the 8 bits representing the brightness of the *green* led for the pixel that is closer to the driver that is producing the signal. 
@@ -48,4 +48,20 @@ the following pixel's DATA_IN (j+1) once the current pixel (j) is already assign
 
 One of the major challenges when sending the data to the led strip is timing. 
 We will explain a single pixel first, then we will expand our explanation to multiple pixels. 
-A bit must be sent every 1.25 $$\mu s$$
+A bit must be sent every 1.25 +/- 0.6 microseconds. Within that 1.25 microseconds, the bit is either 
+1 or 0 depending on how long the signal was hold on high. If the time on high is 0.4 +/- 0.15 microseconds, 
+the bit is consider a 0. If the time on high is 0.8 +/- 0.15 microseconds. The bit is consider a 1. 
+
+A timeline of a bit would seen like this:
+
+![alt tag](https://cloud.githubusercontent.com/assets/1594240/14508664/9bd1f964-0196-11e6-90c3-e7f4f9be524e.png)
+
+For a single pixel, 24 bits must be sent, which means, a pixel takes 30 microseconds to write (If transmitting at exactly 1.25 microseconds).
+For the whole 144 pixels, we need to transmit 3456 bits takin 4.32 ms.
+
+In order to change the value of a pixel it is necessary to do a reset. This is done by keeping the DATA_IN on low for 50 microseconds or more.
+However, reset will not turn off the pixel, it will just release the register to be overwritten by the next 24bits comming from the DATA_IN port. 
+
+**Once a pixel is written, it will retain its value until it is overwritten. If we want to turn off the led, it is 
+necessary to send twentyfour 0s to that pixel after a reset**
+

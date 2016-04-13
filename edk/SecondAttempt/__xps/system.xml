@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Tue Apr 12 14:56:03 2016">
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Wed Apr 13 14:08:40 2016">
 
   <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx16" PACKAGE="csg324" PART="xc6slx16csg324-3" SOURCE="/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.xmp" SPEEDGRADE="-3"/>
 

@@ -210,8 +210,8 @@ begin
 		DataOut_port => dataOut,
 		secondCLK => secondCLK
 	);
-	
-	pix <= "111111111111111111111111";
+
+	pix <= x"0000F0";
 
 	
   ------------------------------------------

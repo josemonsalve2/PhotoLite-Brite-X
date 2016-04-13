@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: platgen -p xc6slx16csg324-3 -lang vhdl -intstyle default -lp
 /home/bee/Nexys3_BSB_Support_v_2_8/Nexys3_AXI_BSB_Support/lib/ -msg
-__xps/ise/xmsgprops.lst system.mhs 
+__xps/ise/xmsgprops.lst -parallel yes system.mhs 
 
 Parse
 /home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs ...
@@ -147,6 +147,36 @@ Creating hardware output directories ...
 Managing hardware (BBD-specified) netlist files ...
 
 Managing cache ...
+IPNAME:proc_sys_reset INSTANCE:proc_sys_reset_0 -
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
+line 20 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_ilmb -
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
+line 33 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_i_bram_ctrl -
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
+line 40 - Copying cache implementation netlist
+IPNAME:lmb_v10 INSTANCE:microblaze_0_dlmb -
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
+line 49 - Copying cache implementation netlist
+IPNAME:lmb_bram_if_cntlr INSTANCE:microblaze_0_d_bram_ctrl -
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
+line 56 - Copying cache implementation netlist
+IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
+line 65 - Copying cache implementation netlist
+IPNAME:microblaze INSTANCE:microblaze_0 -
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
+line 72 - Copying cache implementation netlist
+IPNAME:mdm INSTANCE:debug_module -
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
+line 95 - Copying cache implementation netlist
+IPNAME:axi_interconnect INSTANCE:axi4lite_0 -
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
+line 120 - Copying cache implementation netlist
+IPNAME:ledstrip_driver INSTANCE:ledstrip_driver_0 -
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
+line 128 - Copying cache implementation netlist
 
 Elaborating instances ...
 IPNAME:bram_block INSTANCE:microblaze_0_bram_block -
@@ -162,7 +192,7 @@ ClkGen elaborate status: PASSED
 Writing HDL for elaborated instances ...
 
 Inserting wrapper level ...
-Completion time: 0.00 seconds
+Completion time: 1.00 seconds
 
 Constructing platform-level connectivity ...
 Completion time: 0.00 seconds
@@ -178,60 +208,21 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:proc_sys_reset_0 -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 20 - Running XST synthesis
-INSTANCE:microblaze_0_ilmb -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 33 - Running XST synthesis
-INSTANCE:microblaze_0_i_bram_ctrl -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 40 - Running XST synthesis
-INSTANCE:microblaze_0_dlmb -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 49 - Running XST synthesis
-INSTANCE:microblaze_0_d_bram_ctrl -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 56 - Running XST synthesis
-INSTANCE:microblaze_0_bram_block -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 65 - Running XST synthesis
-INSTANCE:microblaze_0 -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 72 - Running XST synthesis
-INSTANCE:debug_module -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 95 - Running XST synthesis
 INSTANCE:clock_generator_0 -
 /home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
 line 108 - Running XST synthesis
-INSTANCE:axi4lite_0 -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 120 - Running XST synthesis
 INSTANCE:ledstrip_driver_0 -
 /home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
 line 128 - Running XST synthesis
 
 Running NGCBUILD ...
-IPNAME:system_microblaze_0_ilmb_wrapper INSTANCE:microblaze_0_ilmb -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 33 - Running NGCBUILD
-IPNAME:system_microblaze_0_dlmb_wrapper INSTANCE:microblaze_0_dlmb -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 49 - Running NGCBUILD
-IPNAME:system_microblaze_0_wrapper INSTANCE:microblaze_0 -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 72 - Running NGCBUILD
 IPNAME:system_clock_generator_0_wrapper INSTANCE:clock_generator_0 -
 /home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
 line 108 - Running NGCBUILD
-IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
-/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/system.mhs
-line 120 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 201.00 seconds
+Total run time: 63.00 seconds

@@ -8,4 +8,6 @@ default
 /home/bee/Nexys3_BSB_Support_v_2_8/Nexys3_AXI_BSB_Support/lib/
 -msg
 __xps/ise/xmsgprops.lst
+-parallel
+yes
 system.mhs

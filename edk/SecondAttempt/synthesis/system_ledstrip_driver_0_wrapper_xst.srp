@@ -5,7 +5,7 @@ Parameter TMPDIR set to /home/bee/FinalProject/github/PhotoLite-Brite-X/edk/Seco
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total CPU time to Xst completion: 0.01 secs
  
 --> 
 
@@ -525,7 +525,6 @@ Elaborating entity <user_logic> (architecture <IMP>) with generics from library 
 WARNING:HDLCompiler:871 - "/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/pcores/ledstrip_driver_v1_00_a/hdl/vhdl/user_logic.vhd" Line 154: Using initial value '0' for trans since it is never assigned
 
 Elaborating entity <Led_Controller> (architecture <Behavioral>) with generics from library <ledstrip_driver_v1_00_a>.
-WARNING:HDLCompiler:92 - "/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/SecondAttempt/pcores/ledstrip_driver_v1_00_a/hdl/vhdl/Led_Controller.vhd" Line 201: divided_clk should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -1041,35 +1040,61 @@ Synthesizing Unit <Led_Controller>.
 WARNING:Xst:647 - Input <tx> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <dataOut>.
-    Found 8-bit register for signal <clock_divider>.
-    Found 1-bit register for signal <divided_clk>.
-    Found 6-bit register for signal <counter>.
-    Found 6-bit adder for signal <counter[5]_GND_50_o_add_0_OUT> created at line 77.
-    Found 8-bit adder for signal <clock_divider[7]_GND_50_o_add_16_OUT> created at line 1241.
+    Found 1-bit register for signal <s>.
+    Found 6-bit register for signal <index>.
+    Found 16-bit register for signal <led_counter>.
+    Found 2-bit register for signal <system_state>.
+    Found 16-bit register for signal <reset_counter>.
+    Found 8-bit register for signal <counter>.
+INFO:Xst:1799 - State waiting is never reached in FSM <system_state>.
+    Found finite state machine <FSM_1> for signal <system_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 5                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | reseting                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <counter[7]_GND_50_o_add_0_OUT> created at line 74.
+    Found 16-bit adder for signal <led_counter[15]_GND_50_o_add_3_OUT> created at line 1241.
+    Found 6-bit adder for signal <index[5]_GND_50_o_add_6_OUT> created at line 102.
+    Found 16-bit adder for signal <reset_counter[15]_GND_50_o_add_22_OUT> created at line 1241.
+    Found 32x1-bit Read Only RAM for signal <index[4]_X_50_o_Mux_1_o>
     Summary:
-	inferred   2 Adder/Subtractor(s).
-	inferred  16 D-type flip-flop(s).
+	inferred   1 RAM(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred  48 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
 Unit <Led_Controller> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 3
+# RAMs                                                 : 1
+ 32x1-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 5
+ 16-bit adder                                          : 2
  4-bit adder                                           : 1
  6-bit adder                                           : 1
  8-bit adder                                           : 1
-# Registers                                            : 77
+# Registers                                            : 79
  1-bit register                                        : 39
+ 16-bit register                                       : 2
  2-bit register                                        : 2
  32-bit register                                       : 33
  4-bit register                                        : 1
  6-bit register                                        : 1
  8-bit register                                        : 1
-# Multiplexers                                         : 1059
- 1-bit 2-to-1 multiplexer                              : 1057
+# Multiplexers                                         : 1062
+ 1-bit 2-to-1 multiplexer                              : 1059
+ 16-bit 2-to-1 multiplexer                             : 1
  32-bit 2-to-1 multiplexer                             : 2
-# FSMs                                                 : 1
+# FSMs                                                 : 2
 
 =========================================================================
 
@@ -1079,8 +1104,21 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <Led_Controller>.
-The following registers are absorbed into counter <clock_divider>: 1 register on signal <clock_divider>.
+The following registers are absorbed into counter <led_counter>: 1 register on signal <led_counter>.
+The following registers are absorbed into counter <index>: 1 register on signal <index>.
 The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <reset_counter>: 1 register on signal <reset_counter>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_index[4]_X_50_o_Mux_1_o> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <index<4:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
 Unit <Led_Controller> synthesized (advanced).
 
 Synthesizing (advanced) Unit <slave_attachment>.
@@ -1091,16 +1129,19 @@ Unit <slave_attachment> synthesized (advanced).
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 3
+# RAMs                                                 : 1
+ 32x1-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 5
+ 16-bit up counter                                     : 2
  4-bit up counter                                      : 1
  6-bit up counter                                      : 1
  8-bit up counter                                      : 1
 # Registers                                            : 1099
  Flip-Flops                                            : 1099
-# Multiplexers                                         : 1027
- 1-bit 2-to-1 multiplexer                              : 1025
+# Multiplexers                                         : 1028
+ 1-bit 2-to-1 multiplexer                              : 1026
  32-bit 2-to-1 multiplexer                             : 2
-# FSMs                                                 : 1
+# FSMs                                                 : 2
 
 =========================================================================
 
@@ -1119,6 +1160,15 @@ Optimizing FSM <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/FSM_0> on s
  sm_write | 10
  sm_resp  | 11
 ----------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/FSM_1> on signal <system_state[1:1]> with sequential encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ reseting     | 0
+ waiting      | unreached
+ transmitting | 1
+--------------------------
 
 Optimizing unit <system_ledstrip_driver_0_wrapper> ...
 
@@ -1132,16 +1182,17 @@ Optimizing unit <Led_Controller> ...
 WARNING:Xst:1293 - FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_1> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_1> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:2677 - Node <ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <system_ledstrip_driver_0_wrapper>.
-WARNING:Xst:1293 - FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/clock_divider_7> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/clock_divider_6> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/clock_divider_5> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/clock_divider_4> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/clock_divider_3> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_7> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_15> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_14> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/reset_counter_13> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/index_5> has a constant value of 0 in block <system_ledstrip_driver_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/index_0> in Unit <system_ledstrip_driver_0_wrapper> is equivalent to the following FF/Latch, which will be removed : <ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/s> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block system_ledstrip_driver_0_wrapper, actual ratio is 22.
-FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg has been replicated 9 time(s)
+Found area constraint ratio of 100 (+ 0) on block system_ledstrip_driver_0_wrapper, actual ratio is 23.
+FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg has been replicated 8 time(s)
 FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_11 has been replicated 2 time(s)
 FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_12 has been replicated 2 time(s)
 FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_13 has been replicated 2 time(s)
@@ -1152,7 +1203,7 @@ FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i
 FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_22 has been replicated 2 time(s)
 FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_23 has been replicated 2 time(s)
 FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_24 has been replicated 2 time(s)
-FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25 has been replicated 3 time(s)
+FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_25 has been replicated 2 time(s)
 FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_26 has been replicated 2 time(s)
 FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_27 has been replicated 2 time(s)
 FlipFlop ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_28 has been replicated 2 time(s)
@@ -1164,8 +1215,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1149
- Flip-Flops                                            : 1149
+# Registers                                            : 1179
+ Flip-Flops                                            : 1179
 
 =========================================================================
 
@@ -1188,23 +1239,24 @@ Top Level Output File Name         : system_ledstrip_driver_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1639
+# BELS                             : 1931
 #      GND                         : 1
-#      INV                         : 10
-#      LUT1                        : 2
-#      LUT2                        : 68
-#      LUT3                        : 432
-#      LUT4                        : 153
-#      LUT5                        : 252
-#      LUT6                        : 686
-#      MUXCY                       : 2
-#      MUXF7                       : 29
+#      INV                         : 11
+#      LUT1                        : 18
+#      LUT2                        : 85
+#      LUT3                        : 627
+#      LUT4                        : 154
+#      LUT5                        : 257
+#      LUT6                        : 684
+#      MUXCY                       : 33
+#      MUXF7                       : 24
 #      VCC                         : 1
-#      XORCY                       : 3
-# FlipFlops/Latches                : 1149
-#      FD                          : 76
-#      FDR                         : 17
-#      FDRE                        : 1056
+#      XORCY                       : 36
+# FlipFlops/Latches                : 1179
+#      FD                          : 74
+#      FDE                         : 16
+#      FDR                         : 8
+#      FDRE                        : 1081
 
 Device utilization summary:
 ---------------------------
@@ -1213,16 +1265,16 @@ Selected Device : 6slx16csg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1149  out of  18224     6%  
- Number of Slice LUTs:                 1603  out of   9112    17%  
-    Number used as Logic:              1603  out of   9112    17%  
+ Number of Slice Registers:            1179  out of  18224     6%  
+ Number of Slice LUTs:                 1836  out of   9112    20%  
+    Number used as Logic:              1836  out of   9112    20%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2174
-   Number with an unused Flip Flop:    1025  out of   2174    47%  
-   Number with an unused LUT:           571  out of   2174    26%  
-   Number of fully used LUT-FF pairs:   578  out of   2174    26%  
-   Number of unique control sets:        30
+ Number of LUT Flip Flop pairs used:   2213
+   Number with an unused Flip Flop:    1034  out of   2213    46%  
+   Number with an unused LUT:           377  out of   2213    17%  
+   Number of fully used LUT-FF pairs:   802  out of   2213    36%  
+   Number of unique control sets:        27
 
 IO Utilization: 
  Number of IOs:                         150
@@ -1248,12 +1300,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
---------------------------------------------------------------+--------------------------------------------------------------------------+-------+
-Clock Signal                                                  | Clock buffer(FF name)                                                    | Load  |
---------------------------------------------------------------+--------------------------------------------------------------------------+-------+
-S_AXI_ACLK                                                    | NONE(ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 1142  |
-ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/divided_clk| NONE(ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_5)       | 7     |
---------------------------------------------------------------+--------------------------------------------------------------------------+-------+
+-----------------------------------+--------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                    | Load  |
+-----------------------------------+--------------------------------------------------------------------------+-------+
+S_AXI_ACLK                         | NONE(ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 1179  |
+-----------------------------------+--------------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -1264,9 +1315,9 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 7.447ns (Maximum Frequency: 134.280MHz)
+   Minimum period: 7.315ns (Maximum Frequency: 136.699MHz)
    Minimum input arrival time before clock: 3.567ns
-   Maximum output required time after clock: 6.301ns
+   Maximum output required time after clock: 6.274ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -1275,10 +1326,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
-  Clock period: 7.447ns (frequency: 134.280MHz)
-  Total number of paths / destination ports: 86174 / 1696
+  Clock period: 7.315ns (frequency: 136.699MHz)
+  Total number of paths / destination ports: 87657 / 1988
 -------------------------------------------------------------------------
-Delay:               7.447ns (Levels of Logic = 7)
+Delay:               7.315ns (Levels of Logic = 7)
   Source:            ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (FF)
   Destination:       ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_24 (FF)
   Source Clock:      S_AXI_ACLK rising
@@ -1288,44 +1339,22 @@ Delay:               7.447ns (Levels of Logic = 7)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              14   0.447   1.062  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1)
+     FD:C->Q              13   0.447   1.037  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1)
      LUT6:I4->O            2   0.203   0.845  ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_161_o<31>121_1 (ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_161_o<31>121)
-     LUT5:I2->O            8   0.205   0.802  ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_156_o<31>31_SW0 (N292)
-     MUXF7:S->O            4   0.148   1.028  ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_156_o<31>31_1 (ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_156_o<31>31)
-     LUT6:I1->O            1   0.203   0.000  ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_156_o<31>41_G (N1005)
+     LUT5:I2->O            6   0.205   0.744  ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_156_o<31>31_SW0 (N292)
+     MUXF7:S->O            3   0.148   0.995  ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_156_o<31>31_1 (ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_156_o<31>31)
+     LUT6:I1->O            1   0.203   0.000  ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_156_o<31>41_G (N1007)
      MUXF7:I1->O          17   0.140   1.028  ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_156_o<31>41 (ledstrip_driver_0/USER_LOGIC_I/GND_49_o_slv_reg_read_sel[31]_equal_156_o<31>4)
-     LUT5:I4->O            1   0.205   0.827  ledstrip_driver_0/USER_LOGIC_I/Mmux_IP2Bus_Data123 (ledstrip_driver_0/USER_LOGIC_I/Mmux_IP2Bus_Data113)
-     LUT6:I2->O            1   0.203   0.000  ledstrip_driver_0/USER_LOGIC_I/Mmux_IP2Bus_Data125 (ledstrip_driver_0/user_IP2Bus_Data<0>)
+     LUT5:I4->O            1   0.205   0.808  ledstrip_driver_0/USER_LOGIC_I/Mmux_IP2Bus_Data123 (ledstrip_driver_0/USER_LOGIC_I/Mmux_IP2Bus_Data113)
+     LUT6:I3->O            1   0.205   0.000  ledstrip_driver_0/USER_LOGIC_I/Mmux_IP2Bus_Data125 (ledstrip_driver_0/user_IP2Bus_Data<0>)
      FDRE:D                    0.102          ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_0
     ----------------------------------------
-    Total                      7.447ns (1.856ns logic, 5.591ns route)
-                                       (24.9% logic, 75.1% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/divided_clk'
-  Clock period: 2.990ns (frequency: 334.415MHz)
-  Total number of paths / destination ports: 64 / 13
--------------------------------------------------------------------------
-Delay:               2.990ns (Levels of Logic = 1)
-  Source:            ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_0 (FF)
-  Destination:       ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_5 (FF)
-  Source Clock:      ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/divided_clk rising
-  Destination Clock: ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/divided_clk rising
-
-  Data Path: ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_0 to ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_5
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FDR:C->Q              8   0.447   1.167  ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_0 (ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_0)
-     LUT6:I0->O            6   0.203   0.744  ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/GND_50_o_counter[5]_equal_9_o<5>1 (ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/GND_50_o_counter[5]_equal_9_o)
-     FDR:R                     0.430          ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/counter_0
-    ----------------------------------------
-    Total                      2.990ns (1.080ns logic, 1.910ns route)
-                                       (36.1% logic, 63.9% route)
+    Total                      7.315ns (1.858ns logic, 5.457ns route)
+                                       (25.4% logic, 74.6% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 3475 / 2126
+  Total number of paths / destination ports: 3450 / 2124
 -------------------------------------------------------------------------
 Offset:              3.567ns (Levels of Logic = 3)
   Source:            S_AXI_AWVALID (PAD)
@@ -1346,9 +1375,9 @@ Offset:              3.567ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 173 / 38
+  Total number of paths / destination ports: 182 / 39
 -------------------------------------------------------------------------
-Offset:              6.301ns (Levels of Logic = 5)
+Offset:              6.274ns (Levels of Logic = 5)
   Source:            ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (FF)
   Destination:       S_AXI_ARREADY (PAD)
   Source Clock:      S_AXI_ACLK rising
@@ -1357,33 +1386,15 @@ Offset:              6.301ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q              14   0.447   0.958  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1)
-     LUT2:I1->O          105   0.205   1.891  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i<1>1 (ledstrip_driver_0/ipif_Bus2IP_RdCE<30>)
-     LUT6:I5->O            1   0.205   0.000  ledstrip_driver_0/USER_LOGIC_I/slv_read_ack<0>2_F (N972)
+     FD:C->Q              13   0.447   0.933  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1 (ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_1)
+     LUT2:I1->O          104   0.205   1.888  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i<1>1 (ledstrip_driver_0/ipif_Bus2IP_RdCE<30>)
+     LUT6:I5->O            1   0.205   0.000  ledstrip_driver_0/USER_LOGIC_I/slv_read_ack<0>2_F (N974)
      MUXF7:I0->O           2   0.131   0.617  ledstrip_driver_0/USER_LOGIC_I/slv_read_ack<0>2 (ledstrip_driver_0/USER_LOGIC_I/slv_read_ack<0>1)
      LUT6:I5->O           35   0.205   1.439  ledstrip_driver_0/USER_LOGIC_I/slv_read_ack<0>7 (ledstrip_driver_0/user_IP2Bus_RdAck)
      LUT2:I0->O            0   0.203   0.000  ledstrip_driver_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rd_done1 (S_AXI_ARREADY)
     ----------------------------------------
-    Total                      6.301ns (1.396ns logic, 4.905ns route)
-                                       (22.2% logic, 77.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/divided_clk'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              0.447ns (Levels of Logic = 0)
-  Source:            ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/dataOut (FF)
-  Destination:       dataOut (PAD)
-  Source Clock:      ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/divided_clk rising
-
-  Data Path: ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/dataOut to dataOut
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               1   0.447   0.000  ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/dataOut (ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/dataOut)
-    ----------------------------------------
-    Total                      0.447ns (0.447ns logic, 0.000ns route)
-                                       (100.0% logic, 0.0% route)
+    Total                      6.274ns (1.396ns logic, 4.878ns route)
+                                       (22.3% logic, 77.7% route)
 
 =========================================================================
 
@@ -1395,29 +1406,21 @@ Clock to Setup on destination clock S_AXI_ACLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-S_AXI_ACLK     |    7.447|         |         |         |
+S_AXI_ACLK     |    7.315|         |         |         |
 ---------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/divided_clk
---------------------------------------------------------------+---------+---------+---------+---------+
-                                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
---------------------------------------------------------------+---------+---------+---------+---------+
-ledstrip_driver_0/USER_LOGIC_I/Inst_Led_Controller/divided_clk|    2.990|         |         |         |
---------------------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 28.00 secs
-Total CPU time to Xst completion: 27.11 secs
+Total REAL time to Xst completion: 36.00 secs
+Total CPU time to Xst completion: 32.38 secs
  
 --> 
 
 
-Total memory usage is 154764 kilobytes
+Total memory usage is 154960 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   27 (   0 filtered)
-Number of infos    :    5 (   0 filtered)
+Number of warnings :   26 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
 
