@@ -1,5 +1,5 @@
 # PhotoLite-Brite-X
-Long Exposure Photography Gigantic Stick Light Brite
+(UNDER DEVELOPMENT) Long Exposure Photography Gigantic Stick Light Brite
 
 ## WS2812B 144 LED Strip
 
