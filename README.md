@@ -22,7 +22,7 @@ This adds up to a total of 24 bits per pixel. Data is sent in serial transmissio
 the MSB of the 8 bits representing the brightness of the *green* led.
 After transmitting the 8 bits for the *green* led, we send the *red* led's bits, followed by the *blue* led's bits starting 
 always from the MSB to the LSB. Once the 24 bits are received by the first pixel, further data is cascaded to the following pixel.
-**In other words, the order is GBR, from MSB to LSB**.
+**In other words, the order is GRB, from MSB to LSB**.
 
 **IMPORTANT:** Once a led is light up, it will retain its value and will remain on until the value is overwrited after a reset.
 In order to turn off a pixel it is necessary to write 0 to all the 24 bits.
