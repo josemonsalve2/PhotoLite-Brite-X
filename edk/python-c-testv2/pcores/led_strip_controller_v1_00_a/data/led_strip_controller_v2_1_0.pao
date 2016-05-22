@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          /home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/pcores/led_strip_controller_v1_00_a/data/led_strip_controller_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Sun May 22 03:58:52 2016 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a all vhdl
+lib axi_lite_ipif_v1_01_a all vhdl
+lib led_strip_controller_v1_00_a ledDriver_LedStrip vhdl
+lib led_strip_controller_v1_00_a ledDriver_LedStrip_top vhdl
+lib led_strip_controller_v1_00_a user_logic vhdl
+lib led_strip_controller_v1_00_a led_strip_controller vhdl

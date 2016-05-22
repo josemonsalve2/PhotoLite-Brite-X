@@ -1,0 +1,66 @@
+Release 14.7 - xst P.20131013 (lin)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/bee/git/PhotoLite-Brite-X/edk/python-c-testv2/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_microblaze_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/home/bee/git/PhotoLite-Brite-X/edk/python-c-testv2/pcores/" "/home/bee/Nexys3_AXI_BSB_Support/lib/Digilent/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc6slx16csg324-3
+Output File Name                   : "../implementation/system_microblaze_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_microblaze_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
