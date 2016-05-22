@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "/home/bee/git/PhotoLite-Brite-X/ise/CellularRAM/CellularRAMController/CellularRAMController_tb_isim_beh.exe" -prj "/home/bee/git/PhotoLite-Brite-X/ise/CellularRAM/CellularRAMController/CellularRAMController_tb_beh.prj" "work.CellularRAMController_tb" 
