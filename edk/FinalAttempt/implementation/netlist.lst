@@ -1,0 +1,15 @@
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject.ngc 1463909040
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_rs232_uart_1_wrapper.ngc 1463908989
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_proc_sys_reset_0_wrapper.ngc 1463908989
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_clock_generator_0_wrapper.ngc 1463909009
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_microblaze_0_ilmb_wrapper.ngc 1463908994
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_microblaze_0_dlmb_wrapper.ngc 1463908999
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_axi4lite_0_wrapper.ngc 1463909015
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_microblaze_0_wrapper.ngc 1463909004
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_microblaze_0_i_bram_ctrl_wrapper.ngc 1463908989
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_microblaze_0_d_bram_ctrl_wrapper.ngc 1463908989
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_debug_module_wrapper.ngc 1463908989
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_axi_timer_0_wrapper.ngc 1463908989
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_led_strip_controller_0_wrapper.ngc 1463908989
+/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject_microblaze_0_bram_block_wrapper.ngc 1463908989
+OK

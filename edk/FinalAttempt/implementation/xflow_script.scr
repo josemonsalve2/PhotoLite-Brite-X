@@ -1,0 +1,25 @@
+#!/bin/csh -f
+###########################################
+# Script file to run the flow 
+# 
+###########################################
+#
+# Command line for ngdbuild
+#
+ngdbuild -p xc6slx16csg324-3 -nt timestamp -bm FinalProject.bmm "/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject.ngc" -uc FinalProject.ucf FinalProject.ngd 
+
+#
+# Command line for map
+#
+map -o FinalProject_map.ncd -w -pr b -ol high -timing -detail FinalProject.ngd FinalProject.pcf 
+
+#
+# Command line for par
+#
+par -w -ol high FinalProject_map.ncd FinalProject.ncd FinalProject.pcf 
+
+#
+# Command line for post_par_trce
+#
+trce -e 3 -xml FinalProject.twx FinalProject.ncd FinalProject.pcf 
+
