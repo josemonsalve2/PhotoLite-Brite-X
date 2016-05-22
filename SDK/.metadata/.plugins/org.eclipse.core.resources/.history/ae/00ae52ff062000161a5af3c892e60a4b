@@ -166,16 +166,12 @@ int main()
 
 			for (i = 0 ; i < NUM_LEDS ; i ++)
 			{
-				*(leds.led_add) = i;
-				//for (j = 0; j <10;j++); // spin for a while
 				if (i == 0)
-					*(leds.led_value) = 0x000000;
+					*(leds.led_value) = 0x110000;
 				else if (i == 1)
-					*(leds.led_value) = 0x00FF00;
+					*(leds.led_value) = 0x001100;
 				else
 					*(leds.led_value) = 0x000000;
-				//for (j = 0; j <10;j++); // spin for a while
-
 				/*
 				*(leds.led_add) = i;
 				for (j = 0; j <10;j++); // spin for a while
