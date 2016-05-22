@@ -1,0 +1,2 @@
+vhdl work "ledDriver_LedStrip.vhd"
+vhdl work "ledDriver_LedStrip_top.vhd"

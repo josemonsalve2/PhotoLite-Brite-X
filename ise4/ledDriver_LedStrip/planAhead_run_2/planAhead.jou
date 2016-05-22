@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:24:55 MDT 2013
+# Start of session at: Sat May 21 04:32:01 2016
+# Process ID: 24478
+# Log file: /home/bee/FinalProject/github/PhotoLite-Brite-X/ise4/ledDriver_LedStrip/planAhead_run_2/planAhead.log
+# Journal file: /home/bee/FinalProject/github/PhotoLite-Brite-X/ise4/ledDriver_LedStrip/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/bee/FinalProject/github/PhotoLite-Brite-X/ise4/ledDriver_LedStrip/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

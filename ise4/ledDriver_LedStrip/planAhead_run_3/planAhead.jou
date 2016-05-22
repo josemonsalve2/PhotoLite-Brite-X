@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:24:55 MDT 2013
+# Start of session at: Sat May 21 05:38:59 2016
+# Process ID: 15265
+# Log file: /home/bee/FinalProject/github/PhotoLite-Brite-X/ise4/ledDriver_LedStrip/planAhead_run_3/planAhead.log
+# Journal file: /home/bee/FinalProject/github/PhotoLite-Brite-X/ise4/ledDriver_LedStrip/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/bee/FinalProject/github/PhotoLite-Brite-X/ise4/ledDriver_LedStrip/pa.fromNetlist.tcl
+set_property is_loc_fixed false [get_ports [list  C_out]]
+set_property is_loc_fixed true [get_ports [list  C_out]]

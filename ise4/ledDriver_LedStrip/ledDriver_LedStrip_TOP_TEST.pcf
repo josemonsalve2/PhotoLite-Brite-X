@@ -1,0 +1,149 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun May 22 01:38:02 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "C_out" LOCATE = SITE "V12" LEVEL 1;
+COMP "LEDS_OUT" LOCATE = SITE "N10" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "pixel_new_value_0" BEL "pixel_new_value_8" BEL
+        "pixel_new_value_16" BEL "clk_counter_0" BEL "clk_counter_1" BEL
+        "currentAdd_0" BEL "currentAdd_1" BEL "currentAdd_2" BEL
+        "currentAdd_3" BEL "currentAdd_4" BEL "currentAdd_5" BEL
+        "currentAdd_6" BEL "currentAdd_7" BEL "CURRENT_COLOR_FSM_FFd3" BEL
+        "CURRENT_COLOR_FSM_FFd2" BEL "uut/state_machine_state_FSM_FFd1" BEL
+        "uut/state_machine_state_FSM_FFd2" BEL "uut/LEDS_Counter_31" BEL
+        "uut/LEDS_Counter_30" BEL "uut/LEDS_Counter_29" BEL
+        "uut/LEDS_Counter_28" BEL "uut/LEDS_Counter_27" BEL
+        "uut/LEDS_Counter_26" BEL "uut/LEDS_Counter_25" BEL
+        "uut/LEDS_Counter_24" BEL "uut/LEDS_Counter_23" BEL
+        "uut/LEDS_Counter_22" BEL "uut/LEDS_Counter_21" BEL
+        "uut/LEDS_Counter_20" BEL "uut/LEDS_Counter_19" BEL
+        "uut/LEDS_Counter_18" BEL "uut/LEDS_Counter_17" BEL
+        "uut/LEDS_Counter_16" BEL "uut/LEDS_Counter_15" BEL
+        "uut/LEDS_Counter_14" BEL "uut/LEDS_Counter_13" BEL
+        "uut/LEDS_Counter_12" BEL "uut/LEDS_Counter_11" BEL
+        "uut/LEDS_Counter_10" BEL "uut/LEDS_Counter_9" BEL
+        "uut/LEDS_Counter_8" BEL "uut/LEDS_Counter_7" BEL "uut/LEDS_Counter_6"
+        BEL "uut/LEDS_Counter_5" BEL "uut/LEDS_Counter_4" BEL
+        "uut/LEDS_Counter_3" BEL "uut/LEDS_Counter_2" BEL "uut/LEDS_Counter_1"
+        BEL "uut/LEDS_Counter_0" BEL "uut/state_machine_state_FSM_FFd3" BEL
+        "uut/COLOR_23" BEL "uut/COLOR_22" BEL "uut/COLOR_21" BEL
+        "uut/COLOR_20" BEL "uut/COLOR_19" BEL "uut/COLOR_18" BEL
+        "uut/COLOR_17" BEL "uut/COLOR_16" BEL "uut/COLOR_15" BEL
+        "uut/COLOR_14" BEL "uut/COLOR_13" BEL "uut/COLOR_12" BEL
+        "uut/COLOR_11" BEL "uut/COLOR_10" BEL "uut/COLOR_9" BEL "uut/COLOR_8"
+        BEL "uut/COLOR_7" BEL "uut/COLOR_6" BEL "uut/COLOR_5" BEL
+        "uut/COLOR_4" BEL "uut/COLOR_3" BEL "uut/COLOR_2" BEL "uut/COLOR_1"
+        BEL "uut/COLOR_0" BEL "uut/busy_writing" BEL "uut/New_Pixel" BEL
+        "uut/clk_counter_32" BEL "uut/clk_counter_31" BEL "uut/clk_counter_30"
+        BEL "uut/clk_counter_29" BEL "uut/clk_counter_28" BEL
+        "uut/clk_counter_27" BEL "uut/clk_counter_26" BEL "uut/clk_counter_25"
+        BEL "uut/clk_counter_24" BEL "uut/clk_counter_23" BEL
+        "uut/clk_counter_22" BEL "uut/clk_counter_21" BEL "uut/clk_counter_20"
+        BEL "uut/clk_counter_19" BEL "uut/clk_counter_18" BEL
+        "uut/clk_counter_17" BEL "uut/clk_counter_16" BEL "uut/clk_counter_15"
+        BEL "uut/clk_counter_14" BEL "uut/clk_counter_13" BEL
+        "uut/clk_counter_12" BEL "uut/clk_counter_11" BEL "uut/clk_counter_10"
+        BEL "uut/clk_counter_9" BEL "uut/clk_counter_8" BEL
+        "uut/clk_counter_7" BEL "uut/clk_counter_6" BEL "uut/clk_counter_5"
+        BEL "uut/clk_counter_4" BEL "uut/clk_counter_3" BEL
+        "uut/clk_counter_2" BEL "uut/clk_counter_1" BEL "uut/clk_counter_0"
+        BEL "uut/RESETED" BEL "uut/Reset_Leds" BEL
+        "uut/Inst_ledDriver_LedStrip/state_machine_next_FSM_FFd2" BEL
+        "uut/Inst_ledDriver_LedStrip/state_machine_next_FSM_FFd1" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_31" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_30" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_29" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_28" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_27" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_26" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_25" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_24" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_23" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_22" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_21" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_20" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_19" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_18" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_17" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_16" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_15" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_14" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_13" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_12" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_11" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_10" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_9" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_8" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_7" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_6" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_5" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_4" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_3" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_2" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_1" BEL
+        "uut/Inst_ledDriver_LedStrip/PIXEL_counter_0" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_31" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_30" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_29" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_28" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_27" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_26" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_25" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_24" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_23" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_22" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_21" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_20" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_19" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_18" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_17" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_16" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_15" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_14" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_13" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_12" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_11" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_10" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_9" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_8" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_7" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_6" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_5" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_4" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_3" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_2" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_1" BEL
+        "uut/Inst_ledDriver_LedStrip/internal_counter_0" BEL
+        "uut/Inst_ledDriver_LedStrip/busy_signal" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_23" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_22" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_21" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_20" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_19" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_18" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_17" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_16" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_15" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_14" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_13" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_12" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_11" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_10" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_9" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_8" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_7" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_6" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_5" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_4" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_3" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_2" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_1" BEL
+        "uut/Inst_ledDriver_LedStrip/Input_Pixel_Buffer_0" BEL
+        "uut/Inst_ledDriver_LedStrip/output_pixel_Buffer" BEL "print_leds" BEL
+        "uut/LEDS_Counter_0_1" BEL "uut/LEDS_Counter_2_1" BEL
+        "uut/LEDS_Counter_3_1" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+
