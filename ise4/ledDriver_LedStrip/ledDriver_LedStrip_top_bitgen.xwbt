@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=/home/bee/FinalProject/github/PhotoLite-Brite-X/ise4/ledDriver_LedStrip/ledDriver_LedStrip_top.ncd
-OUTFILE=/home/bee/FinalProject/github/PhotoLite-Brite-X/ise4/ledDriver_LedStrip/ledDriver_LedStrip_top.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=/home/bee/FinalProject/github/PhotoLite-Brite-X/ise4/ledDriver_LedStrip
-LICENSE=WebPack
-USER_INFO=175254777_174132022_210622784_501

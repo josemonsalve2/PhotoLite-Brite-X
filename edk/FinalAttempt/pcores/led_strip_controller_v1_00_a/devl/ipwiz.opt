@@ -1,8 +1,0 @@
--batch 
--create led_strip_controller 
--ver 1.00.a 
--dir "/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt" 
--lang vhdl 
--bus axi4lite s 
--reg 32 
--xps 

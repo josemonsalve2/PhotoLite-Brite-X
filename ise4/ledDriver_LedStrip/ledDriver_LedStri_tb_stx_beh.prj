@@ -1,2 +1,0 @@
-vhdl isim_temp "ledDriver_LedStrip.vhd"
-vhdl isim_temp "ledDriver_LedStri_tb.vhd"

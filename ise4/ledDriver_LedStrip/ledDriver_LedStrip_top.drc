@@ -1,8 +1,0 @@
-Release 14.7 Drc P.20131013 (lin)
-Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
-
-Sat May 21 22:05:16 2016
-
-drc -z ledDriver_LedStrip_top.ncd ledDriver_LedStrip_top.pcf
-
-DRC detected 0 errors and 0 warnings.

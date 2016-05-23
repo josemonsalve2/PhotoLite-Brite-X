@@ -1,8 +1,0 @@
--batch 
--create cram_driver 
--ver 1.00.a 
--dir "/home/bee/git/PhotoLite-Brite-X/edk/CRAMTestv2" 
--lang vhdl 
--bus axi4lite s 
--reg 32 
--xps 

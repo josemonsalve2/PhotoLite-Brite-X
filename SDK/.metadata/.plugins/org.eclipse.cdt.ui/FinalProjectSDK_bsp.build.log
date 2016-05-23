@@ -1,6 +1,0 @@
-05:54:30 **** Auto Build of project FinalProjectSDK_bsp ****
-make -k all 
-Finished building libraries
-
-05:54:30 Build Finished (took 71ms)
-

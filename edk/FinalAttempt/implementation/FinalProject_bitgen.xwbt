@@ -1,7 +1,0 @@
-INFILE=/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject.ncd
-OUTFILE=/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation/FinalProject.bit
-FAMILY=Spartan6
-PART=xc6slx16-3csg324
-WORKINGDIR=/home/bee/FinalProject/github/PhotoLite-Brite-X/edk/FinalAttempt/implementation
-LICENSE=WebPack
-USER_INFO=175254777_174132022_210622784_501

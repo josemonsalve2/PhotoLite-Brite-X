@@ -1,1 +1,0 @@
-vhdtdtfi -prj CellularRAMController -o /home/bee/git/PhotoLite-Brite-X/ise/CellularRAM/CellularRAMController/CellularRAMController.vhi -module CellularRAMController -template /opt/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work CellularRAMController.vhd 
