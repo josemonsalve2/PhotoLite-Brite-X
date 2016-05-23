@@ -30,9 +30,9 @@ def promptImageDist():
 		if not os.path.isfile(image_path) :
 			print "\n\n!!! No such file... try again !!!"
 	probe = -1
-	while probe < 0 or probe > 70 :
-		probe = int(raw_input("\nSelect a distance in meters [0,70]: "))
-		if probe < 0 or probe > 70 :
+	while probe < 1 or probe > 70 :
+		probe = int(raw_input("\nSelect a distance in meters [1,70]: "))
+		if probe < 1 or probe > 70 :
 			print "\n\n!!! Bad input... try again !!!"
 	return (image_path, probe)
 
@@ -56,8 +56,8 @@ if __name__ == "__main__":
 	PROBE_START       = 1
 	PROBE_EXIT        = 2
 	RATIO_16x9    = 16/9
-	IMAGE_HEIGHT  = 144
-	AVG_INTERVAL_S  = 0.05
+	IMAGE_HEIGHT  = 143
+	AVG_INTERVAL_MS  = 58.59  # 256columns * 58.59milliseconds = 14.999seconds
 	
 	while 1 :
 		
@@ -79,13 +79,13 @@ if __name__ == "__main__":
 				image = None
 				print "\n\n!!! Invalid image aspect ratio. Must be 16:9."
 			elif height != IMAGE_HEIGHT :
-				image = None
-				print "\n\n!!! Invalid image height. Must be 144 pixels tall."
+				#image = None
+				print "\n\n!!! Invalid image height. Must be 143 pixels tall."
 				
-			
+
 			# Get time interval
 			leds_distance = image_path_dist[1]
-			leds_time = width * AVG_INTERVAL_S
+			leds_time = width * AVG_INTERVAL_MS * 1000
 			leds_speed = leds_distance / leds_time
 			print "The distance for the LEDs stick to travel is ", leds_distance, " meters."
 			print "It must take ", leds_time, " seconds to travel this distance."
@@ -98,6 +98,20 @@ if __name__ == "__main__":
 			else :
 				# Start sending 
 				pixels = image.load()
+#				old_pixels = image.load()
+#				img = Image.new("RGB", (width, height), "black")
+#				pixels = img.load()
+				for column in range(width) :
+					for row in range(height) :
+						if pixels[column,row][0] < 0 or pixels[column,row][0] > 255 :
+							print "Pixel[",  column, ", ", row, "]'s Red is out of range (", pixels[column,row][0], "."
+						if pixels[column,row][1] < 0 or pixels[column,row][1] > 255 :
+							print "Pixel[",  column, ", ", row, "]'s Green is out of range (", pixels[column,row][0], "."
+						if pixels[column,row][2] < 0 or pixels[column,row][2] > 255 :
+							print "Pixel[",  column, ", ", row, "]'s Blue is out of range (", pixels[column,row][0], "."
+#						pixels[column, row] = ( (int('{:08b}'.format(old_pixels[column, row][0])[::-1], 2)),
+#								(int('{:08b}'.format(old_pixels[column, row][1])[::-1], 2)),
+#								(int('{:08b}'.format(old_pixels[column, row][2])[::-1], 2)) )
 				
 				"""
 					Traverses each column in the image.
@@ -109,10 +123,10 @@ if __name__ == "__main__":
 				initial = time()
 				start = time()
 				leftover = 0
-				for column in range(0, width-1) :  # width = 256, height = 143
+				for column in reversed(range(width)) :  # width = 256, height = 143
 					
-					# Transmit 83 pixels (249 bytes)
-					s.send_packet(">250B",               # 250 bytes of data (command + 83 pixels)
+					# Transmit 80 pixels (240 bytes)
+					s.send_packet(">241B",               # 241 bytes of data (command + 80 pixels)
 					              1,                     # Command (Transmitting first batch of pixels)
 					              pixels[column, 0][0],   # Read Pixel 1's Red Value
 					              pixels[column, 0][1],   # Read Pixel 1's Green Value
@@ -360,24 +374,27 @@ if __name__ == "__main__":
 					              pixels[column, 78][2],  #         B
 					              pixels[column, 79][0],  #          R
 					              pixels[column, 79][1],  #          G
-					              pixels[column, 79][2],  #          B
-					              
-					              pixels[column, 80][0],  # R
-					              pixels[column, 80][1],  # G
-					              pixels[column, 80][2],  # B
-					              pixels[column, 81][0],  #  R
-					              pixels[column, 81][1],  #  G
-					              pixels[column, 81][2],  #  B
-					              pixels[column, 82][0],  #   R
-					              pixels[column, 82][1],  #   G
-					              pixels[column, 82][2])  #   B
-					
-					# Transmit 60 pixels (180 bytes)
-					s.send_packet(">181B",                 # 181 bytes of data (command + 60 pixels)
+					              pixels[column, 79][2])  #          B
+					 
+					#s.send_packet(">0B");  # 0 bytes of data
+					sleep(0.005)
+
+					#s.port.flushInput()
+					# Transmit 63 pixels (189 bytes)
+					s.send_packet(">190B",                 # 190 bytes of data (command + 63 pixels)
 					              2,                       # Command (Transmitting first batch of pixels)
-					              pixels[column, 83][0],   # Read Pixel 83's Red Value
-					              pixels[column, 83][1],   # Read Pixel 83's Green Value
-					              pixels[column, 83][2],   # Read Pixel 83's Blue Value
+					              pixels[column, 80][0],   # Read Pixel 83's Red Value
+					              pixels[column, 80][1],   # Read Pixel 83's Green Value
+					              pixels[column, 80][2],   # Read Pixel 83's Blue Value
+					              pixels[column, 81][0],   #  R
+					              pixels[column, 81][1],   #  G
+					              pixels[column, 81][2],   #  B
+					              pixels[column, 82][0],   #   R
+					              pixels[column, 82][1],   #   G
+					              pixels[column, 82][2],   #   B
+					              pixels[column, 83][0],   #    R
+					              pixels[column, 83][1],   #    G
+					              pixels[column, 83][2],   #    B
 					              pixels[column, 84][0],   #     R
 					              pixels[column, 84][1],   #     G
 					              pixels[column, 84][2],   #     B
@@ -546,7 +563,7 @@ if __name__ == "__main__":
 					              pixels[column, 137][1],  #        G
 					              pixels[column, 137][2],  #        B
 					              pixels[column, 138][0],  #         R
-					              pixels[column, 108][1],  #         G
+					              pixels[column, 138][1],  #         G
 					              pixels[column, 138][2],  #         B
 					              pixels[column, 139][0],  #          R
 					              pixels[column, 139][1],  #          G
@@ -562,20 +579,24 @@ if __name__ == "__main__":
 					              pixels[column, 142][1],  #   G
 					              pixels[column, 142][2])  #   B
 					
+					sleep(0.005)
+					
 					end = time()
-					elapsed = end - start + leftover
-					if elapsed > AVG_INTERVAL_S :
+					elapsed = end - start
+					if (elapsed * 1000) > AVG_INTERVAL_MS :
 						print "UART took too long."
-						leftover = elapsed - AVG_INTERVAL_S
+				#		#leftover = elapsed - AVG_INTERVAL_S
 					else :
-						leftover = 0
-						sleep(AVG_INTERVAL_S - elapsed)  # Sleep for amount of seconds left in pixel interval
-						start = time()
-					#print "elapsed=", elapsed  # for debugging. Averages 460 ms
+		#			#	leftover = 0
+						sleep((AVG_INTERVAL_MS - (elapsed * 1000)) / 1000 )  # Sleep for amount of seconds left in pixel interval
+					start = time()
+					print "elapsed=", (elapsed * 1000)  # for debugging. Averages 460 ms
 					
 				# end of for loop
 				final = time()
-				print "average transmission=", width
+				print "transmission time=", (final-initial)
+				print "average transmission=", (final-initial)/width
+				s.send_packet(">0B");  # 0 bytes of data
 			# end of else
 		elif probe == PROBE_EXIT :
 			# Exit python script
