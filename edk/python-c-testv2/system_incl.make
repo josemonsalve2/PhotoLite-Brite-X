@@ -38,7 +38,7 @@ PPC440_BOOTLOOP = $(XILINX_EDK_DIR)/sw/lib/ppc440/ppc440_bootloop.elf
 BOOTLOOP_DIR = bootloops
 
 MICROBLAZE_0_BOOTLOOP = $(BOOTLOOP_DIR)/microblaze_0.elf
-MICROBLAZE_0_ELF_IMP = ../../sdk/led_driver/led_driver/Debug/led_driver.elf
+MICROBLAZE_0_ELF_IMP = SDK/led_driver/Debug/led_driver.elf
 
 BRAMINIT_ELF_IMP_FILES = $(MICROBLAZE_0_ELF_IMP)
 BRAMINIT_ELF_IMP_FILE_ARGS = -pe microblaze_0 $(MICROBLAZE_0_ELF_IMP)

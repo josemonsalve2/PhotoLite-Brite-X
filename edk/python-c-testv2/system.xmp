@@ -26,5 +26,5 @@ EnableParTimingError: 1
 ShowLicenseDialog: 1
 BInfo: 
 Processor: microblaze_0
-ElfImp: ../../sdk/led_driver/led_driver/Debug/led_driver.elf
+ElfImp: SDK/led_driver/Debug/led_driver.elf
 ElfSim: 

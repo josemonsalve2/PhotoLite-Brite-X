@@ -15,6 +15,8 @@
  PORT RS232_Uart_1_sin = RS232_Uart_1_sin, DIR = I
  PORT RESET = RESET, DIR = I, SIGIS = RST, RST_POLARITY = 1
  PORT GCLK = GCLK, DIR = I, SIGIS = CLK, CLK_FREQ = 100000000
+ PORT led_strip_controller_0_LEDS_OUT_pin = led_strip_controller_0_LEDS_OUT, DIR = O
+ PORT led_strip_controller_0_C_out_pin = led_strip_controller_0_C_out, DIR = O
 
 
 BEGIN proc_sys_reset
@@ -158,5 +160,7 @@ BEGIN led_strip_controller
  PARAMETER C_HIGHADDR = 0x76a0ffff
  BUS_INTERFACE S_AXI = axi4lite_0
  PORT S_AXI_ACLK = clk_100_0000MHz
+ PORT LEDS_OUT = led_strip_controller_0_LEDS_OUT
+ PORT C_out = led_strip_controller_0_C_out
 END
 

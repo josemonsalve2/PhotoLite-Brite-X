@@ -1,5 +1,5 @@
 
-<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Sun May 22 06:39:33 2016">
+<EDKSYSTEM EDKVERSION="14.7" EDWVERSION="1.2" TIMESTAMP="Sun May 22 09:40:25 2016">
 
   <SYSTEMINFO ARCH="spartan6" DEVICE="xc6slx16" PACKAGE="csg324" PART="xc6slx16csg324-3" SOURCE="/home/bee/git/PhotoLite-Brite-X/edk/python-c-testv2/system.xmp" SPEEDGRADE="-3"/>
 
@@ -6498,11 +6498,15 @@
             <CONNECTION INSTANCE="clock_generator_0" PORT="CLKOUT0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" MPD_INDEX="0" NAME="LEDS_OUT" SIGNAME="__NOC__">
-          <CONNECTIONS/>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="1" MPD_INDEX="0" NAME="LEDS_OUT" SIGNAME="led_strip_controller_0_LEDS_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="led_strip_controller_0_LEDS_OUT_pin"/>
+          </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" MPD_INDEX="1" NAME="C_out" SIGNAME="__NOC__">
-          <CONNECTIONS/>
+        <PORT DIR="O" IS_INSTANTIATED="TRUE" MHS_INDEX="2" MPD_INDEX="1" NAME="C_out" SIGNAME="led_strip_controller_0_C_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External Ports" PORT="led_strip_controller_0_C_out_pin"/>
+          </CONNECTIONS>
         </PORT>
         <PORT BUS="S_AXI" DEF_SIGNAME="axi4lite_0_M_ARESETN" DIR="I" MPD_INDEX="3" NAME="S_AXI_ARESETN" SIGIS="RST" SIGNAME="axi4lite_0_M_ARESETN">
           <CONNECTIONS>
@@ -6651,6 +6655,16 @@
     <PORT CLKFREQUENCY="100000000" DIR="I" MHS_INDEX="3" NAME="GCLK" SIGIS="CLK" SIGNAME="GCLK">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clock_generator_0" PORT="CLKIN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="4" NAME="led_strip_controller_0_LEDS_OUT_pin" SIGNAME="led_strip_controller_0_LEDS_OUT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led_strip_controller_0" PORT="LEDS_OUT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" MHS_INDEX="5" NAME="led_strip_controller_0_C_out_pin" SIGNAME="led_strip_controller_0_C_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="led_strip_controller_0" PORT="C_out"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>

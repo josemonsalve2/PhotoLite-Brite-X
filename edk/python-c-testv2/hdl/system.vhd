@@ -12,7 +12,9 @@ entity system is
     RS232_Uart_1_sout : out std_logic;
     RS232_Uart_1_sin : in std_logic;
     RESET : in std_logic;
-    GCLK : in std_logic
+    GCLK : in std_logic;
+    led_strip_controller_0_LEDS_OUT_pin : out std_logic;
+    led_strip_controller_0_C_out_pin : out std_logic
   );
 end system;
 
@@ -1742,6 +1744,8 @@ architecture STRUCTURE of system is
   signal axi4lite_0_S_WSTRB : std_logic_vector(3 downto 0);
   signal axi4lite_0_S_WVALID : std_logic_vector(0 to 0);
   signal clk_100_0000MHz : std_logic_vector(0 to 0);
+  signal led_strip_controller_0_C_out : std_logic;
+  signal led_strip_controller_0_LEDS_OUT : std_logic;
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Addr : std_logic_vector(0 to 31);
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Clk : std_logic;
   signal microblaze_0_d_bram_ctrl_2_microblaze_0_bram_block_BRAM_Din : std_logic_vector(0 to 31);
@@ -1842,6 +1846,8 @@ begin
 
   -- Internal assignments
 
+  led_strip_controller_0_LEDS_OUT_pin <= led_strip_controller_0_LEDS_OUT;
+  led_strip_controller_0_C_out_pin <= led_strip_controller_0_C_out;
   pgassign1(3 downto 3) <= clk_100_0000MHz(0 to 0);
   pgassign1(2 downto 2) <= clk_100_0000MHz(0 to 0);
   pgassign1(1 downto 1) <= clk_100_0000MHz(0 to 0);
@@ -3484,8 +3490,8 @@ begin
 
   led_strip_controller_0 : system_led_strip_controller_0_wrapper
     port map (
-      LEDS_OUT => open,
-      C_out => open,
+      LEDS_OUT => led_strip_controller_0_LEDS_OUT,
+      C_out => led_strip_controller_0_C_out,
       S_AXI_ACLK => pgassign1(3),
       S_AXI_ARESETN => axi4lite_0_M_ARESETN(3),
       S_AXI_AWADDR => axi4lite_0_M_AWADDR(127 downto 96),

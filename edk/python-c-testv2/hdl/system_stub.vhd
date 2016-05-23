@@ -12,7 +12,9 @@ entity system_stub is
     RS232_Uart_1_sout : out std_logic;
     RS232_Uart_1_sin : in std_logic;
     RESET : in std_logic;
-    GCLK : in std_logic
+    GCLK : in std_logic;
+    led_strip_controller_0_LEDS_OUT_pin : out std_logic;
+    led_strip_controller_0_C_out_pin : out std_logic
   );
 end system_stub;
 
@@ -23,7 +25,9 @@ architecture STRUCTURE of system_stub is
       RS232_Uart_1_sout : out std_logic;
       RS232_Uart_1_sin : in std_logic;
       RESET : in std_logic;
-      GCLK : in std_logic
+      GCLK : in std_logic;
+      led_strip_controller_0_LEDS_OUT_pin : out std_logic;
+      led_strip_controller_0_C_out_pin : out std_logic
     );
   end component;
 
@@ -37,7 +41,9 @@ begin
       RS232_Uart_1_sout => RS232_Uart_1_sout,
       RS232_Uart_1_sin => RS232_Uart_1_sin,
       RESET => RESET,
-      GCLK => GCLK
+      GCLK => GCLK,
+      led_strip_controller_0_LEDS_OUT_pin => led_strip_controller_0_LEDS_OUT_pin,
+      led_strip_controller_0_C_out_pin => led_strip_controller_0_C_out_pin
     );
 
 end architecture STRUCTURE;

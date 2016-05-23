@@ -1,1 +1,1 @@
- -p xc6slx16csg324-3 -pe microblaze_0 ../../sdk/led_driver/led_driver/Debug/led_driver.elf
+ -p xc6slx16csg324-3 -pe microblaze_0 SDK/led_driver/Debug/led_driver.elf

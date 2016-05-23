@@ -39,7 +39,7 @@ Address Map for Processor microblaze_0
   (0x40600000-0x4060ffff) RS232_Uart_1	axi4lite_0
   (0x41400000-0x4140ffff) debug_module	axi4lite_0
   (0x41c00000-0x41c0ffff) axi_timer_0	axi4lite_0
-  (0x7f000000-0x7f00ffff) led_driver_0	axi4lite_0
+  (0x76a00000-0x76a0ffff) led_strip_controller_0	axi4lite_0
 INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:microblaze_0_ilmb - tool is overriding
    PARAMETER C_LMB_NUM_SLAVES value to 1 -
    /opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/da
@@ -58,8 +58,7 @@ Checking platform address map ...
 Initializing Memory...
 Running Data2Mem with the following command:
 data2mem -bm implementation/system_bd -p xc6slx16csg324-3 -bt
-implementation/system.bit  -bd
-../../../../sdk/final-test/led_driver/Debug/led_driver.elf tag microblaze_0  -o
-b implementation/download.bit 
+implementation/system.bit  -bd SDK/led_driver/Debug/led_driver.elf tag
+microblaze_0  -o b implementation/download.bit 
 Memory Initialization completed successfully.
 

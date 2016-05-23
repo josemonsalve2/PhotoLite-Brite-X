@@ -1,0 +1,7 @@
+INFILE=/home/bee/git/PhotoLite-Brite-X/edk/python-c-testv2/implementation/system.ncd
+OUTFILE=/home/bee/git/PhotoLite-Brite-X/edk/python-c-testv2/implementation/system.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/bee/git/PhotoLite-Brite-X/edk/python-c-testv2/implementation
+LICENSE=WebPack
+USER_INFO=175254777_174132022_210622784_501
